@@ -60,3 +60,38 @@ a {
 	opacity: 0.85;
 	color: #fff;
 }
+
+.section {
+	margin-bottom: 140px;
+}
+
+.title-large {
+	max-width: 596px;
+	margin-bottom: 40px;
+	font-size: 48px;
+	font-family: Oswald;
+	font-weight: 600;
+	line-height: 115%;
+	text-transform: uppercase;
+	color: #2c332f;
+}
+
+.title-medium {
+	max-width: 596px;
+	margin-bottom: 40px;
+	font-size: 36px;
+	font-family: Oswald;
+	font-weight: 600;
+	line-height: 115%;
+	text-transform: uppercase;
+	color: #2c332f;
+}
+
+.text-sub {
+	font-weight: 300;
+	font-size: 14px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #858e8a;
+	text-align: right;
+}
