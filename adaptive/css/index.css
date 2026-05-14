@@ -3,14 +3,9 @@
 	padding-top: 80px;
 }
 
-.hero::after {
-	content: "";
-	position: absolute;
+.hero::before {
 	bottom: 106px;
-	z-index: -1;
 	width: 100%;
-	height: 48px;
-	background: url("../images/decor-large-icon.svg") repeat-x;
 }
 
 .hero-container {
@@ -118,18 +113,17 @@
 }
 
 .faq::before {
-	content: "";
-	position: absolute;
 	top: 215px;
-	z-index: -1;
-	width: calc(50% - 250px);
-	height: 48px;
-	background: url("../images/decor-large-icon.svg") repeat-x;
 }
 
 .faq-container {
 	display: flex;
 	gap: 28px;
+}
+
+.faq-image {
+	flex-shrink: 0;
+	max-width: 492px;
 }
 
 details {
