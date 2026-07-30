@@ -1,0 +1,26 @@
+:root {
+  /* font-family */
+  --font-family: "Open Sans", sans-serif;
+  --second-family: "NAMU Pro", sans-serif;
+
+  /* colors */
+  --main-color: #111111;
+  --accent-color: #c5358c;
+  --bg-color: #f8f8f8;
+  --secondary-color: #909090;
+  --link-color: #ffffff;
+  --shadow-color: #0000006b;
+
+  /* container */
+  --container-width: 1262px;
+  --container-padding: 15px;
+
+  /* time */
+  --transition-time: 0.2s;
+
+  /* layers */
+  --layer-negative: -1;
+  --layer-1: 1;
+  --layer-2: 2;
+  --layer-3: 3;
+}
