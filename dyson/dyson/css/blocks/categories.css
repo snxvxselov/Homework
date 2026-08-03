@@ -1,0 +1,122 @@
+.categories {
+  padding-block: 150px;
+}
+
+.categories__title {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+.categories__cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(325px, 1fr));
+  gap: 20px;
+}
+
+@media (width <= 768px) {
+  .categories__cards {
+    grid-template-columns: repeat(4, minmax(142px, 1fr));
+  }
+}
+
+@media (width <= 390px) {
+  .categories__cards {
+    grid-template-columns: repeat(2,minmax(170px, 1fr));
+    gap: 10px;
+  }
+}
+
+.categories__card {
+  border-radius: 10px;
+  box-shadow:
+    0 4px 41px 0 rgba(0, 0, 0, 0.05),
+    0 4px 41px 0 rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.categories__card-link {
+  display: block;
+  max-height: 454px;
+}
+
+.categories__card-img {
+  width: clamp(170px, 8.156rem + 10.13vw, 325px);
+}
+
+.categories__card-wrapper {
+  padding: 19px 40px 30px;
+  transition: color var(--transition-time);
+}
+
+@media (width <= 768px) {
+  .categories__card-wrapper {
+    padding: 10px 14px 15px 12px;
+  }
+}
+
+@media (width <= 390px) {
+  .categories__card-wrapper {
+    padding: 10px 42px 16px 12px;
+  }
+}
+
+@media (any-hover: hover) {
+  .categories__card-wrapper:hover {
+    background-color: var(--main-color);
+  }
+}
+
+.categories__card-title {
+  font-family: var(--second-family);
+  font-weight: 900;
+  font-size: clamp(13px, 0.542rem + 1.11vw, 30px);
+  color: var(--main-color);
+  margin-bottom: clamp(8px, 0.452rem + 0.2vw, 11px);
+  transition: color var(--transition-time);
+}
+
+.categories__card-inner {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: clamp(10px, 0.466rem + 0.65vw, 20px);
+}
+
+.categories__card-text {
+  font-weight: 400;
+  font-size: clamp(11px, 0.48rem + 0.85vw, 24px);
+  color: var(--main-color);
+  transition: color var(--transition-time);
+}
+
+.categories__card-icon {
+  color: var(--main-color);
+
+  transition:
+    color var(--transition-time),
+    transform var(--transition-time);
+}
+
+@media (width <= 768px) {
+  .categories__card-icon {
+    width: 14px;
+    height: auto;
+  }
+}
+
+@media (any-hover: hover) {
+  .categories__card:hover .categories__card-wrapper {
+    background-color: var(--main-color);
+  }
+
+  .categories__card:hover .categories__card-title,
+  .categories__card:hover .categories__card-text,
+  .categories__card:hover .categories__card-icon {
+    color: var(--link-color);
+  }
+
+  .categories__card:hover .categories__card-icon {
+    transform: translateX(10px);
+  }
+}
